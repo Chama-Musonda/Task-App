@@ -1,11 +1,18 @@
 import Header from "./Header"
 import SideBar from "./SideBar"
 
-const Layout = () => {
+interface LayoutComponentProps {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: LayoutComponentProps) => {
   return (
-    <div>
+    <div className="grid grid-cols-4 grid-rows-4">
       <Header />
       <SideBar />
+      <div className="col-span-3 row-span-3">
+        {children}
+      </div>   
     </div>
   )
 }

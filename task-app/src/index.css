@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap");
+
+@theme {
+  /* --- 1. Typography: The Editorial Pairing --- */
+  --font-display: "Manrope", sans-serif; /* For Display & Headlines */
+  --font-sans: "Inter", sans-serif;       /* For UI & Body */
+
+  /* --- 2. Colors: Ozone & Indigo --- */
+  --color-primary: #4d44e3;
+  --color-primary-dim: #4034d7;
+  
+  /* Surface Architecture (Tonal Nesting) */
+  --color-canvas: #f7f9fb;                /* App Background */
+  --color-surface-low: #f0f4f7;          /* Structural Groups */
+  --color-surface-lowest: #ffffff;       /* Task Cards */
+  --color-surface-bright: #ffffff;       /* Hover state for cards */
+  --color-surface-dim: #eef2f5;          /* Completed task background */
+
+  /* The Soft Black (No Pure Black Rule) */
+  --color-on-surface: #2a3439;
+  --color-on-surface-variant: rgba(42, 52, 57, 0.8); /* For checked tasks */
+  
+  /* --- 3. Interaction & Hierarchy --- */
+  --color-outline-variant: rgba(42, 52, 57, 0.15); /* The Ghost Border */
+
+  /* --- 4. Effects: Atmospheric Depth --- */
+  --shadow-ghost: 0px 12px 32px rgba(42, 52, 57, 0.06);
+  
+  /* --- 5. Geometry --- */
+  --radius-md: 0.75rem;   /* For Task Cards */
+  --radius-button: 9999px; /* For the "Approachable" Pill shapes */
+
+  /* --- 6. Custom Gradients --- */
+  --bg-image-action-gradient: linear-gradient(135deg, #4d44e3, #4034d7);
+}

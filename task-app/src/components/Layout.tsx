@@ -8,6 +8,7 @@ interface LayoutComponentProps {
 const Layout = ({ children }: LayoutComponentProps) => {
   return (
     <div className="grid grid-cols-4 grid-rows-4">
+      
       <Header />
       <SideBar />
       <div className="col-span-3 row-span-3">

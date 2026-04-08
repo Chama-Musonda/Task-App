@@ -1,10 +1,12 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 @theme {
   /* --- 1. Typography: The Editorial Pairing --- */
   --font-display: "Manrope", sans-serif; /* For Display & Headlines */
   --font-sans: "Inter", sans-serif;       /* For UI & Body */
+  --font-roboto: "Roboto", sans-serif;
 
   /* --- 2. Colors: Ozone & Indigo --- */
   --color-primary: #4d44e3;

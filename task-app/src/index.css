@@ -1,38 +1,70 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* 1. Import Fonts via CSS instead of HTML Link */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Inter:wght@400;500;600&display=swap");
 
 @theme {
-  /* --- 1. Typography: The Editorial Pairing --- */
-  --font-display: "Manrope", sans-serif; /* For Display & Headlines */
-  --font-sans: "Inter", sans-serif;       /* For UI & Body */
-  --font-roboto: "Roboto", sans-serif;
+  /* 2. Font Families */
+  --font-headline: "Manrope", ui-sans-serif, system-ui;
+  --font-body: "Inter", ui-sans-serif, system-ui;
+  --font-label: "Inter", ui-sans-serif, system-ui;
 
-  /* --- 2. Colors: Ozone & Indigo --- */
-  --color-primary: #4d44e3;
+  /* 3. Border Radius */
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+
+  /* 4. Custom Colors */
+  --color-error-container: #ff8b9a;
+  --color-inverse-surface: #0b0f10;
+  --color-tertiary-fixed-dim: #c4cbe9;
+  --color-on-tertiary: #faf8ff;
+  --color-on-primary-fixed: #2a13c5;
+  --color-secondary-fixed-dim: #d7d3d8;
+  --color-surface-tint: #4d44e3;
+  --color-on-secondary: #fcf8fc;
+  --color-tertiary: #575e78;
+  --color-primary-fixed-dim: #d2d0ff;
   --color-primary-dim: #4034d7;
-  
-  /* Surface Architecture (Tonal Nesting) */
-  --color-canvas: #f7f9fb;                /* App Background */
-  --color-surface-low: #f0f4f7;          /* Structural Groups */
-  --color-surface-lowest: #ffffff;       /* Task Cards */
-  --color-surface-bright: #ffffff;       /* Hover state for cards */
-  --color-surface-dim: #eef2f5;          /* Completed task background */
-
-  /* The Soft Black (No Pure Black Rule) */
+  --color-on-error-container: #782232;
+  --color-surface-dim: #cfdce3;
+  --color-secondary-dim: #545256;
+  --color-on-error: #fff7f7;
+  --color-on-secondary-fixed: #403f43;
+  --color-background: #f7f9fb;
+  --color-on-tertiary-fixed: #323951;
+  --color-surface-container-high: #e1e9ee;
+  --color-on-secondary-container: #525155;
+  --color-error: #9e3f4e;
+  --color-surface-container-highest: #d9e4ea;
+  --color-tertiary-container: #d2d9f8;
+  --color-outline-variant: #a9b4b9;
+  --color-on-surface-variant: #566166;
+  --color-primary: #4d44e3;
+  --color-inverse-on-surface: #9a9d9f;
+  --color-on-secondary-fixed-variant: #5c5b5f;
+  --color-on-background: #2a3439;
+  --color-on-primary: #faf6ff;
+  --color-secondary-container: #e5e1e6;
+  --color-secondary-fixed: #e5e1e6;
+  --color-secondary: #605e62;
+  --color-on-tertiary-container: #444c65;
+  --color-surface: #f7f9fb;
+  --color-on-tertiary-fixed-variant: #4e556f;
+  --color-tertiary-fixed: #d2d9f8;
+  --color-outline: #717c82;
   --color-on-surface: #2a3439;
-  --color-on-surface-variant: rgba(42, 52, 57, 0.8); /* For checked tasks */
-  
-  /* --- 3. Interaction & Hierarchy --- */
-  --color-outline-variant: rgba(42, 52, 57, 0.15); /* The Ghost Border */
-
-  /* --- 4. Effects: Atmospheric Depth --- */
-  --shadow-ghost: 0px 12px 32px rgba(42, 52, 57, 0.06);
-  
-  /* --- 5. Geometry --- */
-  --radius-md: 0.75rem;   /* For Task Cards */
-  --radius-button: 9999px; /* For the "Approachable" Pill shapes */
-
-  /* --- 6. Custom Gradients --- */
-  --bg-image-action-gradient: linear-gradient(135deg, #4d44e3, #4034d7);
+  --color-on-primary-container: #3f33d6;
+  --color-error-dim: #4f0116;
+  --color-primary-container: #e2dfff;
+  --color-surface-container-low: #f0f4f7;
+  --color-surface-container-lowest: #ffffff;
+  --color-inverse-primary: #8582ff;
+  --color-on-primary-fixed-variant: #4a40e0;
+  --color-surface-variant: #d9e4ea;
+  --color-primary-fixed: #e2dfff;
+  --color-tertiary-dim: #4b526c;
+  --color-surface-container: #e8eff3;
+  --color-surface-bright: #f7f9fb;
 }

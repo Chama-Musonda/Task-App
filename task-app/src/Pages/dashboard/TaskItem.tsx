@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { CircleCheck, Star } from "lucide-react";
 
 const TaskItem = () => {
   return (
@@ -27,9 +27,7 @@ const TaskItem = () => {
           </div>
         </div>
         <button className="p-2 text-on-surface-variant/40 hover:text-primary transition-colors">
-          <span className="material-symbols-outlined" data-icon="grade">
-            grade
-          </span>
+          <Star />
         </button>
       </div>
 
@@ -57,13 +55,10 @@ const TaskItem = () => {
           </div>
         </div>
         <button className="p-2 text-indigo-500">
-          <Star
-            className="material-symbols-outlined"
-            data-icon="grade"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-          />
+          <Star style={{ fontVariationSettings: "'FILL' 1" }} />
         </button>
       </div>
+
       <div className="group flex items-center justify-between bg-surface-container-lowest p-6 rounded-xl ghost-shadow hover:bg-surface-bright transition-colors duration-200">
         <div className="flex items-center gap-5">
           <button className="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center hover:border-primary transition-colors"></button>
@@ -79,9 +74,28 @@ const TaskItem = () => {
           </div>
         </div>
         <button className="p-2 text-on-surface-variant/40 hover:text-primary transition-colors">
-          <span className="material-symbols-outlined" data-icon="grade">
-            grade
-          </span>
+          <Star />
+        </button>
+      </div>
+
+      <div className="group flex items-center justify-between bg-surface-dim/40 p-6 rounded-xl transition-colors duration-200">
+        <div className="flex items-center gap-5">
+          <button className="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-white">
+            <CircleCheck className="text-[14px]" />
+          </button>
+          <div>
+            <h4 className="font-body text-lg font-medium text-on-surface-variant/50 line-through">
+              Morning meditation and coffee
+            </h4>
+            <div className="flex items-center gap-3 mt-1">
+              <span className="text-on-surface-variant/30 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-tighter border border-outline-variant/20">
+                Personal
+              </span>
+            </div>
+          </div>
+        </div>
+        <button className="p-2 text-on-surface-variant/20">
+          <Star />
         </button>
       </div>
     </>

@@ -1,15 +1,14 @@
-import Layout from "./components/Layout"
-import Dashboard from "./Pages/dashboard/Dashboard"
+import AppLayout from "./components/AppLayout";
+import MainContent from "./components/MainContent";
+import SideBar from "./components/SideBar";
 
 function App() {
- 
   return (
-    <div className="bg-canvas p-2">
-      <Layout>
-        <Dashboard />
-      </Layout>
+    <div className="bg-background font-body text-on-background selection:bg-primary-container selection:text-on-primary-container">
+      <SideBar />
+      <MainContent />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

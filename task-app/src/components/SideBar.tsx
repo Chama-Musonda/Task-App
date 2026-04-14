@@ -1,24 +1,20 @@
-import { Clipboard, Star, CheckCircle2Icon } from "lucide-react"
+import NavBar from "./NavBar";
 
 const SideBar = () => {
   return (
-    <div className="flex flex-col text-gray-500 row-span-4 col-span-1">
-      <span className="flex mb-2 text-primary-dim">
-        <Clipboard className="mr-2"/>
-        <a href="#"><span className="hidden sm:block">My Tasks</span></a>
-      </span>
+    <aside className="h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 border-r border-transparent z-50">
+      <div className="mb-10">
+        <h1 className="text-xl font-black font-label text-indigo-600 dark:text-indigo-400 tracking-tighter">
+          TaskFlow
+        </h1>
+        <p className="text-xs text-on-surface-variant/60 font-medium tracking-wide">
+          The Intentional Calm
+        </p>
+      </div>
 
-      <span className="flex mb-2">
-        <Star className="mr-2"/>
-        <a href="#"><span className="hidden sm:block">Important</span></a>
-      </span>
+      <NavBar />
+    </aside>
+  );
+};
 
-      <span className="flex">
-        <CheckCircle2Icon className="mr-2"/>
-        <a href="#"><span className="hidden sm:block">completed</span></a>
-      </span>
-    </div>
-  )
-}
-
-export default SideBar
+export default SideBar;

@@ -1,4 +1,4 @@
-import { Circle, CircleCheck } from "lucide-react";
+import { Circle, CircleCheck, Plus } from "lucide-react";
 
 const SubTaskSection = () => {
   return (
@@ -8,13 +8,13 @@ const SubTaskSection = () => {
           Sub-tasks
         </h3>
         <button className="text-primary font-semibold text-sm hover:underline flex items-center gap-1">
-          <span className="material-symbols-outlined text-sm">add</span>
+          <Plus className="text-sm" />
           Add Sub-task
         </button>
       </div>
       <div className="space-y-4">
         <div className="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group">
-          <Circle className="cursor-pointer hover:text-primary" />
+          <Circle className="text-outline-variant cursor-pointer hover:text-primary" />
           <span className="text-on-surface font-medium flex-grow">
             Draft new color system
           </span>
@@ -35,7 +35,7 @@ const SubTaskSection = () => {
           </span>
         </div>
         <div className="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group">
-          <Circle className="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary" />
+          <Circle className="text-outline-variant cursor-pointer hover:text-primary" />
           <span className="text-on-surface font-medium flex-grow">
             Create sample moodboard for client
           </span>

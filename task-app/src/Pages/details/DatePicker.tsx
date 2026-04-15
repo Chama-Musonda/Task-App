@@ -1,3 +1,5 @@
+import { Calendar } from "lucide-react";
+
 const DatePicker = () => {
   return (
     <div className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]">

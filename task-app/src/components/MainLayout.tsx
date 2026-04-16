@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
-import SideBar from "./SideBar";
 import MainContent from "./MainContent";
+import SideBar from "./SideBar";
 
-const MainLayout = () => {
+const MainLayout = ({ showTopBar }: {showTopBar: boolean}) => {
   return (
     <>
       <SideBar />
-      <MainContent>
+
+      <MainContent showTopBar={showTopBar}>
         <Outlet />
       </MainContent>
     </>

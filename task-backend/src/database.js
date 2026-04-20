@@ -13,28 +13,13 @@ const db = new Database(path.join(dataDir, 'tasks.db'));
 // Enable foreign keys
 db.exec("PRAGMA foreign_keys = ON");
 
-db.exec(`
-    CREATE TABLE IF NOT EXISTS refresh_tokens (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      token_hash TEXT UNIQUE NOT NULL,
-      user_id INTEGER NOT NULL,
-      expires_at DATETIME NOT NULL,
-      revoked BOOLEAN DEFAULT FALSE,
-      device_info TEXT,
-      ip_address TEXT,
-      created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-      revoked_at DATETIME,
-      FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-    )
-  `)
-
 // Create users table
 db.exec(`
   CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT(255) UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
-    full_name TEXT(100),
+    full_name TEXT(100) NULL,
     created_at TEXT DEFAULT CURRENT_TIMESTAMP
   )
 `);

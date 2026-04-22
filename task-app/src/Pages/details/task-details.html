@@ -106,48 +106,48 @@
       }
     </style>
   </head>
-  <body class="bg-background text-on-background font-body min-h-screen">
+  <body className="bg-background text-on-background font-body min-h-screen">
     <!-- TopNavBar -->
     <header
-      class="w-full top-0 sticky bg-slate-50 dark:bg-slate-900 z-50 tonal-shift flat no shadows"
+      className="w-full top-0 sticky bg-slate-50 dark:bg-slate-900 z-50 tonal-shift flat no shadows"
     >
-      <nav class="flex justify-between items-center px-8 py-4 w-full">
-        <div class="flex items-center gap-4">
+      <nav className="flex justify-between items-center px-8 py-4 w-full">
+        <div className="flex items-center gap-4">
           <span
-            class="text-2xl font-bold text-indigo-600 dark:text-indigo-400 tracking-tighter font-headline"
+            className="text-2xl font-bold text-indigo-600 dark:text-indigo-400 tracking-tighter font-headline"
             >TaskFlow</span
           >
         </div>
-        <div class="flex items-center gap-6">
-          <div class="hidden md:flex gap-8 items-center">
+        <div className="flex items-center gap-6">
+          <div className="hidden md:flex gap-8 items-center">
             <a
-              class="text-indigo-700 dark:text-indigo-300 font-bold border-b-2 border-indigo-600 py-1 font-['Manrope'] font-semibold tracking-tight"
+              className="text-indigo-700 dark:text-indigo-300 font-bold border-b-2 border-indigo-600 py-1 font-['Manrope'] font-semibold tracking-tight"
               href="#"
               >Dashboard</a
             >
             <a
-              class="text-slate-500 dark:text-slate-400 hover:text-indigo-500 py-1 font-['Manrope'] font-semibold tracking-tight transition-colors"
+              className="text-slate-500 dark:text-slate-400 hover:text-indigo-500 py-1 font-['Manrope'] font-semibold tracking-tight transition-colors"
               href="#"
               >Calendar</a
             >
             <a
-              class="text-slate-500 dark:text-slate-400 hover:text-indigo-500 py-1 font-['Manrope'] font-semibold tracking-tight transition-colors"
+              className="text-slate-500 dark:text-slate-400 hover:text-indigo-500 py-1 font-['Manrope'] font-semibold tracking-tight transition-colors"
               href="#"
               >Analytics</a
             >
           </div>
-          <div class="flex items-center gap-3">
+          <div className="flex items-center gap-3">
             <button
-              class="p-2 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors rounded-full active:scale-90 duration-200"
+              className="p-2 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors rounded-full active:scale-90 duration-200"
             >
-              <span class="material-symbols-outlined text-on-surface-variant"
+              <span className="material-symbols-outlined text-on-surface-variant"
                 >search</span
               >
             </button>
             <button
-              class="p-2 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors rounded-full active:scale-90 duration-200"
+              className="p-2 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors rounded-full active:scale-90 duration-200"
             >
-              <span class="material-symbols-outlined text-on-surface-variant"
+              <span className="material-symbols-outlined text-on-surface-variant"
                 >account_circle</span
               >
             </button>
@@ -155,173 +155,173 @@
         </div>
       </nav>
     </header>
-    <div class="flex">
+    <div className="flex">
       <!-- SideNavBar -->
       <aside
-        class="hidden lg:flex h-screen w-64 fixed left-0 top-0 pt-20 flex-col bg-slate-50 dark:bg-slate-950 border-r border-transparent p-6 z-40"
+        className="hidden lg:flex h-screen w-64 fixed left-0 top-0 pt-20 flex-col bg-slate-50 dark:bg-slate-950 border-r border-transparent p-6 z-40"
       >
-        <div class="mb-10">
-          <h2 class="text-xl font-black text-indigo-600 dark:text-indigo-400">
+        <div className="mb-10">
+          <h2 className="text-xl font-black text-indigo-600 dark:text-indigo-400">
             TaskFlow
           </h2>
-          <p class="text-xs text-on-surface-variant font-medium mt-1">
+          <p className="text-xs text-on-surface-variant font-medium mt-1">
             The Intentional Calm
           </p>
         </div>
-        <nav class="flex flex-col gap-2 flex-grow">
+        <nav className="flex flex-col gap-2 flex-grow">
           <a
-            class="flex items-center gap-3 text-indigo-700 dark:text-indigo-300 font-semibold bg-indigo-50 dark:bg-indigo-900/30 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
+            className="flex items-center gap-3 text-indigo-700 dark:text-indigo-300 font-semibold bg-indigo-50 dark:bg-indigo-900/30 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
             href="#"
           >
-            <span class="material-symbols-outlined" data-icon="assignment"
+            <span className="material-symbols-outlined" data-icon="assignment"
               >assignment</span
             >
-            <span class="font-['Inter'] text-sm font-medium">My Tasks</span>
+            <span className="font-['Inter'] text-sm font-medium">My Tasks</span>
           </a>
           <a
-            class="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
+            className="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
             href="#"
           >
-            <span class="material-symbols-outlined" data-icon="grade"
+            <span className="material-symbols-outlined" data-icon="grade"
               >grade</span
             >
-            <span class="font-['Inter'] text-sm font-medium">Important</span>
+            <span className="font-['Inter'] text-sm font-medium">Important</span>
           </a>
           <a
-            class="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
+            className="flex items-center gap-3 text-slate-600 dark:text-slate-400 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-3 hover:translate-x-1 transition-transform duration-200 active:scale-98"
             href="#"
           >
-            <span class="material-symbols-outlined" data-icon="task_alt"
+            <span className="material-symbols-outlined" data-icon="task_alt"
               >task_alt</span
             >
-            <span class="font-['Inter'] text-sm font-medium">Completed</span>
+            <span className="font-['Inter'] text-sm font-medium">Completed</span>
           </a>
         </nav>
         <button
-          class="mt-auto bg-primary text-on-primary rounded-full py-4 px-6 font-semibold flex items-center justify-center gap-2 shadow-lg shadow-indigo-200 dark:shadow-none hover:translate-x-1 transition-transform duration-200 active:scale-95"
+          className="mt-auto bg-primary text-on-primary rounded-full py-4 px-6 font-semibold flex items-center justify-center gap-2 shadow-lg shadow-indigo-200 dark:shadow-none hover:translate-x-1 transition-transform duration-200 active:scale-95"
         >
-          <span class="material-symbols-outlined">add</span>
+          <span className="material-symbols-outlined">add</span>
           <span>Add New Task</span>
         </button>
       </aside>
       <!-- Main Content (Task Details View) -->
-      <main class="flex-grow lg:ml-64 p-8 md:p-12 min-h-screen">
-        <div class="max-w-4xl mx-auto">
+      <main className="flex-grow lg:ml-64 p-8 md:p-12 min-h-screen">
+        <div className="max-w-4xl mx-auto">
           <!-- Breadcrumbs/Back -->
-          <nav class="flex items-center gap-4 mb-10 group cursor-pointer">
+          <nav className="flex items-center gap-4 mb-10 group cursor-pointer">
             <button
-              class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors"
+              className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors"
             >
-              <span class="material-symbols-outlined">arrow_back</span>
+              <span className="material-symbols-outlined">arrow_back</span>
             </button>
             <span
-              class="text-on-surface-variant font-label text-sm font-semibold"
+              className="text-on-surface-variant font-label text-sm font-semibold"
               >Back to Dashboard / Task Details</span
             >
           </nav>
           <!-- Task Title Header -->
-          <div class="mb-12">
-            <div class="flex items-start justify-between gap-6">
-              <div class="space-y-4">
+          <div className="mb-12">
+            <div className="flex items-start justify-between gap-6">
+              <div className="space-y-4">
                 <span
-                  class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
+                  className="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider"
                   >High Priority</span
                 >
                 <h1
-                  class="text-4xl md:text-5xl font-headline font-bold text-on-background tracking-tight leading-tight"
+                  className="text-4xl md:text-5xl font-headline font-bold text-on-background tracking-tight leading-tight"
                 >
                   Revitalize the Brand Identity for Project Echo
                 </h1>
               </div>
               <button
-                class="w-14 h-14 rounded-full border-2 border-outline-variant flex items-center justify-center text-outline-variant hover:border-primary hover:text-primary transition-all duration-300"
+                className="w-14 h-14 rounded-full border-2 border-outline-variant flex items-center justify-center text-outline-variant hover:border-primary hover:text-primary transition-all duration-300"
               >
-                <span class="material-symbols-outlined" style="font-size: 32px"
+                <span className="material-symbols-outlined" style="font-size: 32px"
                   >check_circle</span
                 >
               </button>
             </div>
           </div>
           <!-- Bento Details Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Main Body Content -->
-            <div class="md:col-span-2 space-y-8">
+            <div className="md:col-span-2 space-y-8">
               <!-- Description Area -->
               <div
-                class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
+                className="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
               >
                 <h3
-                  class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
+                  className="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
                 >
                   Description
                 </h3>
                 <textarea
-                  class="w-full bg-transparent border-none focus:ring-0 text-on-surface leading-relaxed text-lg min-h-[180px] p-0 font-body placeholder:text-outline-variant"
+                  className="w-full bg-transparent border-none focus:ring-0 text-on-surface leading-relaxed text-lg min-h-[180px] p-0 font-body placeholder:text-outline-variant"
                   placeholder="Add a more detailed description for this task..."
                 >
 We need to refine the visual language for the Project Echo relaunch. This includes updating the color palette to more muted, sophisticated tones and finalizing the typography hierarchy. The goal is to create a 'Mindful Canvas' aesthetic that prioritizes whitespace and editorial clarity over traditional dashboard clutter.</textarea
                 >
               </div>
               <!-- Sub-tasks Section -->
-              <div class="bg-surface-container-low p-8 rounded-xl">
-                <div class="flex items-center justify-between mb-6">
+              <div className="bg-surface-container-low p-8 rounded-xl">
+                <div className="flex items-center justify-between mb-6">
                   <h3
-                    class="text-on-surface font-headline text-xl font-semibold"
+                    className="text-on-surface font-headline text-xl font-semibold"
                   >
                     Sub-tasks
                   </h3>
                   <button
-                    class="text-primary font-semibold text-sm hover:underline flex items-center gap-1"
+                    className="text-primary font-semibold text-sm hover:underline flex items-center gap-1"
                   >
-                    <span class="material-symbols-outlined text-sm">add</span>
+                    <span className="material-symbols-outlined text-sm">add</span>
                     Add Sub-task
                   </button>
                 </div>
-                <div class="space-y-4">
+                <div className="space-y-4">
                   <div
-                    class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
+                    className="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
                   >
                     <span
-                      class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary"
+                      className="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary"
                       >radio_button_unchecked</span
                     >
-                    <span class="text-on-surface font-medium flex-grow"
+                    <span className="text-on-surface font-medium flex-grow"
                       >Draft new color system</span
                     >
                     <span
-                      class="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
                       >drag_indicator</span
                     >
                   </div>
                   <div
-                    class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
+                    className="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
                   >
                     <span
-                      class="material-symbols-outlined text-primary"
+                      className="material-symbols-outlined text-primary"
                       style="font-variation-settings: &quot;FILL&quot; 1"
                       >check_circle</span
                     >
                     <span
-                      class="text-on-surface-variant font-medium flex-grow line-through opacity-60"
+                      className="text-on-surface-variant font-medium flex-grow line-through opacity-60"
                       >Review typography pairings</span
                     >
                     <span
-                      class="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
                       >drag_indicator</span
                     >
                   </div>
                   <div
-                    class="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
+                    className="flex items-center gap-4 bg-surface-container-lowest p-5 rounded-lg transition-all hover:bg-surface-bright group"
                   >
                     <span
-                      class="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary"
+                      className="material-symbols-outlined text-outline-variant cursor-pointer hover:text-primary"
                       >radio_button_unchecked</span
                     >
-                    <span class="text-on-surface font-medium flex-grow"
+                    <span className="text-on-surface font-medium flex-grow"
                       >Create sample moodboard for client</span
                     >
                     <span
-                      class="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
+                      className="material-symbols-outlined text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity"
                       >drag_indicator</span
                     >
                   </div>
@@ -329,77 +329,77 @@ We need to refine the visual language for the Project Echo relaunch. This includ
               </div>
             </div>
             <!-- Sidebar Details -->
-            <div class="space-y-6">
+            <div className="space-y-6">
               <!-- Date Picker Card -->
               <div
-                class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
+                className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
               >
                 <h3
-                  class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
+                  className="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
                 >
                   Due Date
                 </h3>
                 <div
-                  class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors"
+                  className="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors"
                 >
-                  <span class="material-symbols-outlined text-primary"
+                  <span className="material-symbols-outlined text-primary"
                     >calendar_today</span
                   >
-                  <span class="text-on-surface font-medium"
+                  <span className="text-on-surface font-medium"
                     >October 24, 2023</span
                   >
                 </div>
               </div>
               <!-- Reminders Toggle Card -->
               <div
-                class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
+                className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
               >
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <span class="material-symbols-outlined text-secondary"
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-secondary"
                       >notifications_active</span
                     >
-                    <span class="text-on-surface font-medium">Remind me</span>
+                    <span className="text-on-surface font-medium">Remind me</span>
                   </div>
                   <div
-                    class="w-12 h-6 bg-primary rounded-full relative cursor-pointer flex items-center px-1"
+                    className="w-12 h-6 bg-primary rounded-full relative cursor-pointer flex items-center px-1"
                   >
                     <div
-                      class="w-4 h-4 bg-on-primary rounded-full shadow-sm translate-x-6"
+                      className="w-4 h-4 bg-on-primary rounded-full shadow-sm translate-x-6"
                     ></div>
                   </div>
                 </div>
-                <p class="text-xs text-on-surface-variant mt-3 leading-relaxed">
+                <p className="text-xs text-on-surface-variant mt-3 leading-relaxed">
                   Notifications will be sent 30 minutes before the deadline.
                 </p>
               </div>
               <!-- Assigned / Metadata -->
               <div
-                class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
+                className="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(42,52,57,0.04)]"
               >
                 <h3
-                  class="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
+                  className="text-on-surface-variant font-label text-xs font-bold uppercase tracking-widest mb-4"
                 >
                   Collaborators
                 </h3>
-                <div class="flex -space-x-2">
+                <div className="flex -space-x-2">
                   <img
-                    class="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
+                    className="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
                     data-alt="portrait of a young smiling professional woman with short dark hair in a bright office"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ9SbwhQOQxzfaDPCQLtlMd20bQFSRLQ91q-uAX2x_WHoV5S8OavnVRJd6LnbJJSCbEJsHcnt31_I1CxEOfvOwYMmpSf9NIWp9LsoRNby-83cXR_nIN9IZ7RS516wPUJsVDWcV_5NVjlNB5GeYqKXzqyzzIQPEYCAcHyO27XIBC4sY86WUv304Hkx-i33Lvn1gBzClnAF61bC9vDa0SSYoLn5Q_-PNricwTY6wxuoZ98Flg3BMFjFpKHgXPXCSvyEIbkFihM9NcAI"
                   />
                   <img
-                    class="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
+                    className="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
                     data-alt="portrait of a confident man with a beard wearing a light blue shirt in natural daylight"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1PS0nU2-VIsZyl92CBlJ3I95pEENviFlzltJYkwdqAMc1kK-7v6DaVDp0vCdFPRqmKRB_dS1kEchbhRN5O2nB-K3hVjCiR49fqROVVa4Fy0Bc-MwdNUv-XNRRWNHop373sZoVz6emdquz-aOHOq2ya5O_dJN-KHJ-mQNqYlwP5kkK4G7YUT-bIZoaXYH8jAoyGvrSJIf_du3sWQjwWfPHYe_VwY9ukQv6GuQ_EBFc2TbiVv0yY1PuVvvYiJ6BDF9HfVR0q3tM8Ks"
                   />
                   <img
-                    class="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
+                    className="w-10 h-10 rounded-full border-2 border-surface-container-lowest object-cover"
                     data-alt="close up portrait of a stylish woman with glasses looking thoughtful in an urban setting"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhh1wZI_cwxj5YONN3dU5zdX400QkNk0rxZ5otK-XXlKNhqP5bW08R6OXdL8jjg5g1YagJ54pmSa7iNO2OuReR33McGgdMSwbOAAWA2spEUo2j3Ghf-0AXrW8lVVbDeYgOyVBFgrHDN5riFNmWgBkdP2jY5yqAUE9Bj0jqYhVE8CPfHJ1jgVUQhJRuMb1ujFNBsttEPUPEBpMkhYI2JPUiJOOq0kPcvmjPRNext46IsuPjaFAaNnKjsbpnCYCsuFLzuEMtAH7zz2s"
                   />
                   <div
-                    class="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-surface-container-lowest flex items-center justify-center text-xs font-bold text-on-surface-variant"
+                    className="w-10 h-10 rounded-full bg-surface-container-highest border-2 border-surface-container-lowest flex items-center justify-center text-xs font-bold text-on-surface-variant"
                   >
                     +2
                   </div>
@@ -407,21 +407,21 @@ We need to refine the visual language for the Project Echo relaunch. This includ
               </div>
               <!-- Attachments Visual -->
               <div
-                class="relative overflow-hidden rounded-xl h-40 group cursor-pointer"
+                className="relative overflow-hidden rounded-xl h-40 group cursor-pointer"
               >
                 <img
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   data-alt="minimal workspace with a laptop, open notebook, and a small plant on a light wood desk"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjyiydU9_GS7ozmXFJX0ntiG6lqU6Q89fU7jANteoYXeXzil2XvWEAIr-tUE_x50p0p-pa_GqdqFDsecHf0G37OEN7cBXHdclxFXsrCaWQh0PX11M46Frry7DOUhySkayNBDAVnVKp-fR3-ldd5Wx9ccB-rTdVfARPmTO0sanazfHwIUSMI8Pq8AEX4Dgmb2p2BESyFXzRe_hHaDgoNgHLIND9WTxtxiAfASOYQ3m28PLYS8mPbrtvLCFw-IfNxAqeO6xrx8X733o"
                 />
                 <div
-                  class="absolute inset-0 bg-on-background/30 flex flex-col justify-end p-4"
+                  className="absolute inset-0 bg-on-background/30 flex flex-col justify-end p-4"
                 >
                   <span
-                    class="text-white text-xs font-bold uppercase tracking-widest"
+                    className="text-white text-xs font-bold uppercase tracking-widest"
                     >3 Attachments</span
                   >
-                  <span class="text-white/80 text-sm"
+                  <span className="text-white/80 text-sm"
                     >Review design specs...</span
                   >
                 </div>
@@ -430,22 +430,22 @@ We need to refine the visual language for the Project Echo relaunch. This includ
           </div>
           <!-- Footer Actions -->
           <div
-            class="mt-12 pt-8 border-t border-surface-container-high flex flex-wrap gap-4 items-center justify-between"
+            className="mt-12 pt-8 border-t border-surface-container-high flex flex-wrap gap-4 items-center justify-between"
           >
             <button
-              class="flex items-center gap-2 text-error font-semibold hover:bg-error/5 px-4 py-2 rounded-lg transition-colors"
+              className="flex items-center gap-2 text-error font-semibold hover:bg-error/5 px-4 py-2 rounded-lg transition-colors"
             >
-              <span class="material-symbols-outlined">delete_outline</span>
+              <span className="material-symbols-outlined">delete_outline</span>
               Delete Task
             </button>
-            <div class="flex gap-4">
+            <div className="flex gap-4">
               <button
-                class="px-8 py-3 rounded-full font-semibold border-2 border-outline-variant hover:bg-surface-container-low transition-colors"
+                className="px-8 py-3 rounded-full font-semibold border-2 border-outline-variant hover:bg-surface-container-low transition-colors"
               >
                 Archive
               </button>
               <button
-                class="px-8 py-3 rounded-full font-semibold bg-primary text-on-primary shadow-lg shadow-indigo-100 hover:translate-y-[-2px] transition-all"
+                className="px-8 py-3 rounded-full font-semibold bg-primary text-on-primary shadow-lg shadow-indigo-100 hover:translate-y-[-2px] transition-all"
               >
                 Save Changes
               </button>
@@ -456,10 +456,10 @@ We need to refine the visual language for the Project Echo relaunch. This includ
     </div>
     <!-- Mobile FAB (Task Orchestrator) -->
     <button
-      class="lg:hidden fixed bottom-8 right-8 bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-2xl flex items-center gap-2 active:scale-95 transition-all z-50"
+      className="lg:hidden fixed bottom-8 right-8 bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-2xl flex items-center gap-2 active:scale-95 transition-all z-50"
       style="background: linear-gradient(135deg, #4d44e3 0%, #4034d7 100%)"
     >
-      <span class="material-symbols-outlined">add</span>
+      <span className="material-symbols-outlined">add</span>
       New Task
     </button>
   </body>

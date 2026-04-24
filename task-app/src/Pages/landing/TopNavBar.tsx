@@ -16,11 +16,11 @@ const TopNavBar = () => {
         </div>
         <div className="flex items-center gap-6 font-label text-sm font-medium">
           <Link to="/signin/login">
-            <button className="text-[#2a3439] dark:text-slate-400 opacity-80 hover:text-[#4d44e3] transition-all">Login</button>
+            <button className="text-[#2a3439] dark:text-slate-400 opacity-80 hover:text-[#4d44e3] transition-all cursor-pointer">Login</button>
           </Link>
           
           <Link to="/signin/signup">
-            <button className="action-gradient text-on-primary px-6 py-2.5 rounded-full font-semibold shadow-lg hover:scale-[1.02] active:scale-95 transition-all">Get Started</button>
+            <button className="action-gradient text-on-primary px-6 py-2.5 rounded-full font-semibold shadow-lg hover:scale-[1.02] active:scale-95 transition-all cursor-pointer">Get Started</button>
           </Link>
         </div>
       </nav>

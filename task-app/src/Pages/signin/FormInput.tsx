@@ -1,6 +1,6 @@
 import { useMutation} from "@tanstack/react-query"
 import { ArrowRight } from "lucide-react"
-import { useReducer, useState, type FormEvent } from "react"
+import { useEffect, useReducer, useState, type FormEvent } from "react"
 import axios from "axios"
 interface State {
   full_name: string,
@@ -80,21 +80,27 @@ function reducer(state: State, action: Action) {
 const FormInput = ({ action }: Props) => {
   const [state, dispatch] = useReducer(reducer, { full_name: '', email: '', password: '', confirm_password: '' })
   const [isLoggingIn, setIsLoggingIn] = useState(true)
-  if (action === 'signup') {
-    setIsLoggingIn(false)
-  } else if (action === 'login') {
-    setIsLoggingIn(true)
-  }
+  const [status, setStatus] = useState<string | null>(null)
+
+  useEffect(() => {
+    if (action) setIsLoggingIn(action === 'login')
+  }, [action])
 
   const { 
     mutate, 
-    data: user, 
-    isPending, 
-    isError, 
-    error
-  } = useMutation({ mutationFn: authenticateUser })
+    isPending
+  } = useMutation({ 
+      mutationFn: authenticateUser,
+      onSuccess: (data) => {
+        setStatus(isLoggingIn ? 'Login successful' : 'Account created successfully')
+        console.log(data)
+      },
 
-  const [status, setStatus] = useState<string | null>(null)
+      onError: (error: any) => {
+        setStatus(error.message || 'An error occured')
+      }
+      })
+
   const passwordsMatch = state.password === state.confirm_password
   const showPasswordError = state.confirm_password !== "" && state.password !== state.confirm_password;
 
@@ -109,14 +115,13 @@ const FormInput = ({ action }: Props) => {
       return;
     }
 
-    try {
-      mutate({ email: state.email, password: state.password, fullName: state.full_name, isNewUser: !isLoggingIn })
-      console.log(user)
-      setStatus(isLoggingIn ? "Login successful" : "Account created successfully")
-    } catch (error) {
-      const message = error instanceof Error ? error.message : "An unexpected error occurred"
-      setStatus(message)
-    }
+    mutate({ 
+      email: state.email, 
+      password: state.password, 
+      fullName: state.full_name, 
+      isNewUser: !isLoggingIn 
+      })
+     
   }
 
   function changeMode(setTo: boolean) {

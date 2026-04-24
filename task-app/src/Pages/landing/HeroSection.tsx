@@ -17,8 +17,8 @@ const HeroSection = () => {
           </p>
           {/* remember to add flex-col sm:flex */}
           <div className="flex flex-row gap-4 items-start">
-            <Link to="/dashboard">
-              <button className="action-gradient text-on-primary px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-[1.02] active:scale-95 transition-all">
+            <Link to="/signin/signup">
+              <button className="action-gradient text-on-primary px-10 py-4 rounded-full font-semibold text-lg shadow-xl hover:scale-[1.02] active:scale-95 transition-all cursor-pointer">
               Get Started for Free
               </button>
             </Link>

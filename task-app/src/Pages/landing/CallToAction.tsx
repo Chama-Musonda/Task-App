@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const CallToAction = () => {
   return (
     <section className="max-w-7xl mx-auto px-8 mb-32">
@@ -5,9 +7,11 @@ const CallToAction = () => {
         <div className="relative z-10 max-w-2xl mx-auto">
           <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">Ready to find your calm?</h2>
           <p className="text-lg opacity-90 mb-10">Join thousands of users who have traded chaos for clarity with TaskFlow.</p>
-          <button className="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all ghost-shadow">
-            Get Started for Free
-          </button>
+          <Link to="/signin/signup">
+            <button className="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold text-lg hover:scale-[1.02] active:scale-95 transition-all ghost-shadow cursor-pointer">
+              Get Started for Free
+            </button>
+          </Link>
         </div>
         {/* Decorative Circle */}
         <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>

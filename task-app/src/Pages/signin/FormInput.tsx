@@ -8,6 +8,10 @@ interface State {
   password: string,
   confirm_password: string
 }
+
+interface Props {
+  action: 'login' | 'signup' | undefined
+}
 interface Action {
   type: string,
   payload: string
@@ -73,8 +77,14 @@ function reducer(state: State, action: Action) {
   }
 }
 
-const FormInput = () => {
+const FormInput = ({ action }: Props) => {
   const [state, dispatch] = useReducer(reducer, { full_name: '', email: '', password: '', confirm_password: '' })
+  const [isLoggingIn, setIsLoggingIn] = useState(true)
+  if (action === 'signup') {
+    setIsLoggingIn(false)
+  } else if (action === 'login') {
+    setIsLoggingIn(true)
+  }
 
   const { 
     mutate, 
@@ -85,7 +95,6 @@ const FormInput = () => {
   } = useMutation({ mutationFn: authenticateUser })
 
   const [status, setStatus] = useState<string | null>(null)
-  const [isLoggingIn, setIsLoggingIn] = useState(true)
   const passwordsMatch = state.password === state.confirm_password
   const showPasswordError = state.confirm_password !== "" && state.password !== state.confirm_password;
 

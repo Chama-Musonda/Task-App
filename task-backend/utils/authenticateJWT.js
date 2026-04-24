@@ -1,12 +1,5 @@
-import jwt from 'jsonwebtoken'
-
-const JWT_SECRET = process.env.ACCESS_TOKEN_SECRET
-if (!JWT_SECRET) {
-  throw new Error('ACCESS_TOKEN_SECRET is required')
-}
-
 const authenticateJWT = (req, res, next) => {
-  const token = req.cookies?.token
+  const token = req.cookies.token
 
   if (!token) {
     return res.status(401).json({ message: 'Unauthorized' })
@@ -22,4 +15,4 @@ const authenticateJWT = (req, res, next) => {
   }
 }
 
-export default authenticateJWT
+module.exports = authenticateJWT

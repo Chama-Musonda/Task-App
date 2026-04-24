@@ -1,6 +1,7 @@
 import TaskItem from "./TaskItem";
+import { type Task } from "../../types/task";
 
-const TaskSection = () => {
+const TaskSection = ({ tasks }: { tasks: Task[] }) => {
   return (
     <div className="bg-surface-container-low rounded-[2rem] p-8">
       <div className="flex justify-between items-end mb-8 px-2">
@@ -13,7 +14,9 @@ const TaskSection = () => {
       </div>
 
       <div className="space-y-6">
-        <TaskItem />
+        {tasks && tasks.map((task) => (
+          <TaskItem key={task.id} task={task}/>
+        ))}
       </div>
     </div>
   );

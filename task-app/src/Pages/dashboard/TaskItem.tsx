@@ -1,7 +1,8 @@
 import { CircleCheck, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { type Task } from "../../types/task";
 
-const TaskItem = () => {
+const TaskItem = ({ task }: { task: Task }) => {
   return (
     <>
       <Link to="/task-details/1">

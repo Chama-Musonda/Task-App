@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 // Ensure data directory exists
-const dataDir = path.join(process.cwd(), '..', 'data');
+const dataDir = path.join(process.cwd(), '.', 'data');
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }
@@ -65,4 +65,4 @@ db.exec(`CREATE INDEX IF NOT EXISTS idx_attachments_task_id ON attachments(task_
 
 console.log('Database schema created successfully'); 
 
-module.exports = db;
+export default db

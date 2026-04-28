@@ -1,3 +1,4 @@
 task-backend/.env
 task-frontend/.env
 task-backend/data/
+task-backend/data/tasks.db

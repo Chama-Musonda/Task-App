@@ -48,7 +48,6 @@ const TaskItem = ({ task }: { task: Task }) => {
         </button>
       </div>
       </Link>
-
     </>
   );
 };

@@ -1,3 +1,4 @@
+import { Plus } from "lucide-react";
 import NavBar from "./NavBar";
 
 const SideBar = () => {
@@ -13,6 +14,14 @@ const SideBar = () => {
       </div>
 
       <NavBar />
+
+      <div className="mt-auto">
+        <button
+          className="w-full py-3 px-4 action-gradient text-white rounded-full font-semibold flex items-center justify-center gap-2 ghost-shadow hover:scale-[1.02] transition-transform active:scale-95">
+          <Plus />
+          <span>Add New Task</span>
+        </button>
+      </div>
     </aside>
   );
 };

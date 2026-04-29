@@ -1,6 +1,7 @@
 import { Plus, Calendar, ChevronRight } from "lucide-react";
 
 const QuickAddTask = () => {
+
   return (
     <section className="mb-16">
       <div className="group relative bg-surface-container-low rounded-xl p-2 flex items-center transition-all duration-300 focus-within:bg-primary-container/30">

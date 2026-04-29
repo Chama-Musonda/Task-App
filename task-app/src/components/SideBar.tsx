@@ -1,11 +1,10 @@
 import { Plus } from "lucide-react";
 import NavBar from "./NavBar";
-import { useContext } from "react";
-import { ModalContext } from "../context/ModalContext";
+import { useModalToggle } from "../store/useModalToggle"; 
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
-  const { setShowModal } = useContext(ModalContext);
+  const setShowModal = useModalToggle(state => state.setShowModal);
 
   return (
     <aside className="h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 border-r border-transparent z-50">

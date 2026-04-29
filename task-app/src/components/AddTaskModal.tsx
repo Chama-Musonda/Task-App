@@ -1,9 +1,8 @@
 import { Calendar, Flag, Tag } from "lucide-react"
-import {ModalContext} from "../context/ModalContext"
-import { useContext } from "react";
+import { useModalToggle } from "../store/useModalToggle";
 
 const AddTaskModal = () => {
-  const { setShowModal } = useContext(ModalContext);
+  const setShowModal = useModalToggle(state => state.setShowModal);
   return (
     <div className="absolute top-[20%] inset-0 z-[60] flex items-center justify-center p-4 bg-on-surface/5 h-screen w-full" onClick={() => setShowModal(false)}>
     {/* <!-- Main Modal Container --> */}

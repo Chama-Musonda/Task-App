@@ -2,11 +2,12 @@ import QuickAddTask from "./QuickAddInput";
 import TaskSection from "./TaskSection";
 import { type Task } from "../../types/task";
 import AddTaskModal from "../../components/AddTaskModal";
+import { useModalToggle } from "../../store/useModalToggle";
 import { useContext } from "react";
 import { ModalContext } from "../../context/ModalContext";
 
 const Dashboard = () => {
-  const { showModal, setShowModal } = useContext(ModalContext);
+  const { showModal, setShowModal } = useModalToggle();
 
   const tasks: Task[] = [
     {

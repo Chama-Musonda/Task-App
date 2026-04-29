@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html className="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-fixed-variant": "#4e556f",
+            "surface-dim": "#cfdce3",
+            "secondary-fixed": "#e5e1e6",
+            "on-surface": "#2a3439",
+            "on-secondary": "#fcf8fc",
+            "inverse-surface": "#0b0f10",
+            "secondary-fixed-dim": "#d7d3d8",
+            "on-tertiary-container": "#444c65",
+            "surface-tint": "#4d44e3",
+            "on-primary": "#faf6ff",
+            "secondary-dim": "#545256",
+            "primary": "#4d44e3",
+            "primary-fixed": "#e2dfff",
+            "primary-dim": "#4034d7",
+            "tertiary-dim": "#4b526c",
+            "on-secondary-fixed": "#403f43",
+            "on-error-container": "#782232",
+            "inverse-primary": "#8582ff",
+            "primary-container": "#e2dfff",
+            "on-surface-variant": "#566166",
+            "on-primary-container": "#3f33d6",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#d2d9f8",
+            "on-tertiary": "#faf8ff",
+            "error": "#9e3f4e",
+            "background": "#f7f9fb",
+            "on-secondary-container": "#525155",
+            "surface-container-highest": "#d9e4ea",
+            "surface-container-low": "#f0f4f7",
+            "outline": "#717c82",
+            "surface-container-high": "#e1e9ee",
+            "error-dim": "#4f0116",
+            "on-error": "#fff7f7",
+            "tertiary": "#575e78",
+            "secondary": "#605e62",
+            "tertiary-fixed-dim": "#c4cbe9",
+            "on-background": "#2a3439",
+            "on-primary-fixed": "#2a13c5",
+            "outline-variant": "#a9b4b9",
+            "secondary-container": "#e5e1e6",
+            "on-primary-fixed-variant": "#4a40e0",
+            "surface-variant": "#d9e4ea",
+            "primary-fixed-dim": "#d2d0ff",
+            "surface-bright": "#f7f9fb",
+            "surface": "#f7f9fb",
+            "error-container": "#ff8b9a",
+            "tertiary-fixed": "#d2d9f8",
+            "inverse-on-surface": "#9a9d9f",
+            "on-tertiary-fixed": "#323951",
+            "on-secondary-fixed-variant": "#5c5b5f",
+            "surface-container": "#e8eff3"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "display": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body className="bg-background text-on-surface antialiased min-h-screen">
+  <!-- Blurred Background Dashboard -->
+  <div className="fixed inset-0 overflow-hidden blur-md pointer-events-none transition-all duration-500 opacity-60">
+    <!-- TopAppBar Placeholder -->
+    <header className="flex justify-between items-center w-full px-6 py-4 bg-[#f0f4f7]">
+      <div className="text-xl font-bold tracking-tight text-[#4d44e3] font-manrope">Intentional Calm</div>
+      <div className="flex gap-4">
+        <span className="material-symbols-outlined text-slate-500">notifications</span>
+        <span className="material-symbols-outlined text-slate-500">search</span>
+      </div>
+    </header>
+    <main className="p-8 max-w-5xl mx-auto">
+      <h1 className="text-[2.75rem] font-bold text-on-surface mb-8 leading-tight">Good Morning, Alex.</h1>
+      <!-- Bento Grid Dashboard Mockup -->
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="md:col-span-2 space-y-6">
+          <div className="bg-surface-container-low p-8 rounded-xl">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-1.5rem font-semibold">Today</h2>
+              <span className="text-label-md text-on-surface-variant">4 Tasks</span>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-white p-6 rounded-xl flex items-center gap-4">
+                <div className="w-6 h-6 border-2 border-outline rounded-full"></div>
+                <div className="h-4 w-48 bg-surface-container-highest rounded"></div>
+              </div>
+              <div className="bg-white p-6 rounded-xl flex items-center gap-4">
+                <div className="w-6 h-6 border-2 border-outline rounded-full"></div>
+                <div className="h-4 w-64 bg-surface-container-highest rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-surface-container-low p-8 rounded-xl h-fit">
+          <h2 className="text-1.5rem font-semibold mb-6">Upcoming</h2>
+          <div className="h-32 bg-surface-container-highest/50 rounded-xl mb-4"></div>
+          <div className="h-32 bg-surface-container-highest/50 rounded-xl"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Modal Overlay -->
+  <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-on-surface/5 backdrop-blur-sm">
+    <!-- Main Modal Container -->
+    <div
+      className="bg-surface-container-lowest w-full max-w-xl rounded-lg shadow-[0px_12px_32px_rgba(42,52,57,0.06)] overflow-hidden transition-all duration-300 transform scale-100 opacity-100 border-none ring-1 ring-black/5">
+      <form action="#" className="p-8 space-y-8">
+        <!-- Task Title -->
+        <div className="space-y-2">
+          <input autofocus=""
+            className="w-full text-2xl font-bold font-headline bg-transparent border-none focus:ring-0 p-0 placeholder:text-surface-dim text-on-surface selection:bg-primary-container"
+            placeholder="What needs to be done?" type="text" />
+          <div className="h-[2px] w-full bg-gradient-to-r from-primary to-transparent opacity-20"></div>
+        </div>
+        <!-- Description -->
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 text-on-surface-variant">
+            <span className="material-symbols-outlined text-[20px]">notes</span>
+            <span className="text-[14px] font-semibold tracking-wide uppercase">Description</span>
+          </div>
+          <textarea
+            className="w-full bg-surface-container-low border-none rounded-xl p-4 text-body-md focus:bg-primary-container/30 transition-colors focus:ring-0 placeholder:text-on-surface-variant/40 resize-none"
+            placeholder="Add more details..." rows="3"></textarea>
+        </div>
+        <!-- Priority & Date Row -->
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Priority Select -->
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 text-on-surface-variant">
+              <span className="material-symbols-outlined text-[20px]">flag</span>
+              <span className="text-[14px] font-semibold tracking-wide uppercase">Priority</span>
+            </div>
+            <div className="flex gap-2">
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-primary text-white transition-all active:scale-95 shadow-lg shadow-primary/20"
+                type="button">High</button>
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-secondary-container text-secondary transition-all hover:bg-surface-container-highest active:scale-95"
+                type="button">Medium</button>
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container-highest active:scale-95"
+                type="button">Low</button>
+            </div>
+          </div><!-- Category Select -->
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 text-on-surface-variant">
+              <span className="material-symbols-outlined text-[20px]">sell</span>
+              <span className="text-[14px] font-semibold tracking-wide uppercase">Category</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-indigo-50 text-indigo-600 transition-all hover:bg-indigo-100 active:scale-95"
+                type="button">Personal</button>
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container-highest active:scale-95"
+                type="button">Meeting</button>
+              <button
+                className="px-4 py-2 rounded-full text-[12px] font-bold bg-surface-container-low text-on-surface-variant transition-all hover:bg-surface-container-highest active:scale-95"
+                type="button">Work</button>
+            </div>
+          </div>
+          <!-- Due Date -->
+          <div className="space-y-3">
+            <div className="flex items-center gap-2 text-on-surface-variant">
+              <span className="material-symbols-outlined text-[20px]">calendar_month</span>
+              <span className="text-[14px] font-semibold tracking-wide uppercase">Due Date</span>
+            </div>
+            <div
+              className="flex items-center gap-3 bg-surface-container-low px-4 py-2.5 rounded-full text-body-md text-on-surface cursor-pointer hover:bg-surface-container-highest transition-colors">
+              <span className="text-sm font-medium">Tomorrow, 10:00 AM</span>
+            </div>
+          </div>
+        </div>
+        <!-- Sub-tasks Section -->
+        <div className="space-y-3">
+          <div className="flex items-center gap-2 text-on-surface-variant">
+            <span className="material-symbols-outlined text-[20px]">checklist</span>
+            <span className="text-[14px] font-semibold tracking-wide uppercase">Sub-tasks</span>
+          </div>
+          <div className="space-y-3">
+            <button className="flex items-center gap-2 text-primary text-sm font-semibold px-1 group" type="button">
+              <span className="material-symbols-outlined group-hover:scale-110 transition-transform">add_circle</span>
+              <span>Add Sub-task</span>
+            </button>
+          </div>
+        </div>
+        <!-- Action Buttons -->
+        <div className="pt-6 flex items-center justify-end gap-4 border-t border-surface-container-highest">
+          <button
+            className="px-6 py-3 text-sm font-semibold text-on-surface-variant hover:text-on-surface transition-colors active:scale-95"
+            type="button">
+            Cancel
+          </button>
+          <button
+            className="bg-gradient-to-br from-[#4d44e3] to-[#4034d7] text-white px-8 py-3 rounded-full font-bold text-sm shadow-[0px_8px_20px_rgba(77,68,227,0.3)] hover:shadow-[0px_10px_24px_rgba(77,68,227,0.4)] transition-all active:scale-95 flex items-center gap-2"
+            type="submit">
+            <span>Create Task</span>
+            <span className="material-symbols-outlined text-[18px]">done_all</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

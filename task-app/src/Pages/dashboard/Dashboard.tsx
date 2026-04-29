@@ -1,8 +1,13 @@
 import QuickAddTask from "./QuickAddInput";
 import TaskSection from "./TaskSection";
 import { type Task } from "../../types/task";
+import AddTaskModal from "../../components/AddTaskModal";
+import { useContext } from "react";
+import { ModalContext } from "../../context/ModalContext";
 
 const Dashboard = () => {
+  const { showModal, setShowModal } = useContext(ModalContext);
+
   const tasks: Task[] = [
     {
       id: "1",
@@ -59,22 +64,27 @@ const Dashboard = () => {
       updatedDate: null
     },
   ]
-
+  // <div className="fixed inset-0 overflow-hidden blur-md pointer-events-none transition-all duration-500 opacity-60">
   return (
-    <div className="max-w-4xl mx-auto px-8 pt-12 pb-24">
-      <header className="mb-12">
-        <h2 className="font-headline text-5xl font-bold text-on-background tracking-tight mb-2">
-          My Tasks
-        </h2>
-        <p className="text-on-surface-variant text-lg">
-          Focus on what matters most today.
-        </p>
-      </header>
+    <>
+      <div className={showModal ? "relative overflow-hidden blur-md pointer-events-none transition-all duration-500 opacity-60 max-h-full px-8 pt-12 pb-24" : "max-w-4xl mx-auto px-8 pt-12 pb-24"} onClick={() => setShowModal(false)}>
+        <header className="mb-12">
+          <h2 className="font-headline text-5xl font-bold text-on-background tracking-tight mb-2">
+            My Tasks
+          </h2>
+          <p className="text-on-surface-variant text-lg">
+            Focus on what matters most today.
+          </p>
+        </header>
 
-      <QuickAddTask />
+        <QuickAddTask />
 
-      <TaskSection tasks={tasks}/>
-    </div>
+        <TaskSection tasks={tasks}/>
+
+      </div>
+
+      {showModal && <AddTaskModal />}
+    </>
   );
 };
 

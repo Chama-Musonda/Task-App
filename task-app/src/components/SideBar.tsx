@@ -1,13 +1,20 @@
 import { Plus } from "lucide-react";
 import NavBar from "./NavBar";
+import { useContext } from "react";
+import { ModalContext } from "../context/ModalContext";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
+  const { setShowModal } = useContext(ModalContext);
+
   return (
     <aside className="h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 flex flex-col p-6 border-r border-transparent z-50">
       <div className="mb-10">
-        <h1 className="text-xl font-black font-label text-indigo-600 dark:text-indigo-400 tracking-tighter">
-          TaskFlow
-        </h1>
+        <Link to="/dashboard">
+          <h1 className="text-xl font-black font-label text-indigo-600 dark:text-indigo-400 tracking-tighter">
+            TaskFlow
+          </h1>
+        </Link>
         <p className="text-xs text-on-surface-variant/60 font-medium tracking-wide">
           The Intentional Calm
         </p>
@@ -17,7 +24,9 @@ const SideBar = () => {
 
       <div className="mt-auto">
         <button
-          className="w-full py-3 px-4 action-gradient text-white rounded-full font-semibold flex items-center justify-center gap-2 ghost-shadow hover:scale-[1.02] transition-transform active:scale-95">
+          className="w-full py-3 px-4 action-gradient text-white rounded-full font-semibold flex items-center justify-center gap-2 ghost-shadow hover:scale-[1.02] transition-transform active:scale-95"
+          onClick={() => setShowModal(true)}
+        >
           <Plus />
           <span>Add New Task</span>
         </button>

@@ -4,12 +4,14 @@ import Dashboard from "./Pages/dashboard/Dashboard";
 import DetailsPage from "./Pages/details/DetailsPage";
 import LandingPage from "./Pages/landing/LandingPage";
 import SignInPage from "./Pages/signin/SignInPage";
+import { ModalContextProvider } from "./context/ModalContext";
 
 function App() {
   return (
     <div className="bg-background font-body text-on-background selection:bg-primary-container selection:text-on-primary-container">
-      <Routes>
-        <Route path="/" element={<LandingPage />}/>
+      <ModalContextProvider>
+        <Routes>
+          <Route path="/" element={<LandingPage />}/>
 
         <Route path="/signin/:action" element={<SignInPage />} />
         
@@ -22,7 +24,8 @@ function App() {
         </Route>
 
         <Route path="*" element={<div className="h-screen flex justify-center items-center">404</div>} />
-      </Routes>
+        </Routes>
+      </ModalContextProvider>
     </div>
   );
 }
